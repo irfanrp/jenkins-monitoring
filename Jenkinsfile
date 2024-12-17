@@ -22,16 +22,5 @@ pipeline {
                 }
             }
         }
-        
-        stage('rollout restart  Kubernetes') {
-            steps {
-                script {
-                    // Deploy to Kubernetes using kubectl
-                    sh '''
-                        kubectl rollout restart deployment/grafana -n $KUBERNETES_NAMESPACE
-                    '''
-                }
-            }
-        }
     }
 }
