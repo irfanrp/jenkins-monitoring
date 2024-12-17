@@ -17,7 +17,7 @@ pipeline {
                 script {
                     // Deploy to Kubernetes using kubectl
                     sh '''
-                        kubectl apply -f k8s/grafana.yaml -n $KUBERNETES_NAMESPACE
+                        kubectl apply -f grafana.yaml -n $KUBERNETES_NAMESPACE
                     '''
                 }
             }
