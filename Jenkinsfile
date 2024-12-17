@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    environment {s
+    environment {
         KUBERNETES_NAMESPACE = 'monitoring'  // Replace with your namespace
     }
     
